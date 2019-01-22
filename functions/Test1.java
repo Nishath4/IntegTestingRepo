@@ -1,9 +1,11 @@
+import com.zoho.cloud.function.Context;
+import com.zoho.cloud.function.basic.*;
 import java.util.*;
-import com.zoho.*;
-public class Test1 implements ZohoFunction{
-	public void runner(Context context, FuncParam funcParam){
-		String sampleInput = funcParam.get( "sampleInput" );
-		context.write( "Nishath" );
-		context.log( "log" );
+public class HelloWorld implements ZCFunction
+{
+	public void runner(Context context, BasicIO basicIO) throws Exception
+	{
+		String sampleInput = basicIO.get( "sampleInput" );
+		basicIO.write( "Hello World" );
 	}
 }
