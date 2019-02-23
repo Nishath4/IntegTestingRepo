@@ -5,6 +5,6 @@ public class Test2 implements ZCFunction
 {
 	public void runner(Context context, BasicIO basicIO) throws Exception
 	{
-		basicIO.write( "Test 2 Running" );
+		basicIO.write( "Test 2 Running updated" );
 	}
 }
